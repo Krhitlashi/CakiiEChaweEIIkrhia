@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eriiha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Arakef"
+    android:background="@color/Shaqa">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sakef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/chelesai"
+            android:paddingTop="@dimen/sorha"
+            android:paddingBottom="@dimen/psarh"
+            android:layout_gravity="bottom"
+            android:clipToPadding="false"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/iixakanoipaaksiica"
+            style="@style/Iitxe_Cazelesh"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            app:cardBackgroundColor="@color/Tiisha"
+            android:layout_margin="@dimen/chelesai"
+            app:strokeColor="@color/Tawa"
+            app:strokeWidth="0.5dp"
+            android:elevation="0dp"
+            app:contentPadding="-4dp"
+            android:alpha="0.96">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/iixakanoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/iixakanoi"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:background="@android:color/transparent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sakaiixa"
+            style="@style/Iitxe_Cazelesh_Ciihii"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|end"
+            app:strokeColor="@color/Paarha"
+            app:strokeWidth="0.5dp"
+            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+            app:backgroundTint="@color/Tawa"
+            android:contentDescription="@string/iixakanoi"
+            app:elevation="0dp"
+            android:layout_marginEnd="4dp"
+            android:src="@android:drawable/ic_menu_edit"
+            app:maxImageSize="24dp"
+            app:tint="@color/Kpaa"
+            app:fabCustomSize="44dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/kiihiisaka"
+            style="@style/Iitxe_Cazelesh"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            app:cardBackgroundColor="@color/Tiisha"
+            android:layout_marginHorizontal="@dimen/chelesai"
+            android:layout_marginBottom="92dp"
+            app:strokeColor="@color/Tawa"
+            app:strokeWidth="0.5dp"
+            app:contentPadding="-4dp"
+            android:alpha="0.96"
+            android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Iitxe_Cazelesh_Ciihii"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    app:chipStrokeColor="@color/Paarha"
+                    app:chipStrokeWidth="0.5dp"
+                    app:chipBackgroundColor="@color/Tawa"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/iixakanoi"
+                    android:textAlignment="center" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Iitxe_Cazelesh_Ciihii"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    app:chipStrokeColor="@color/Paarha"
+                    app:chipStrokeWidth="0.5dp"
+                    app:chipBackgroundColor="@color/Tawa"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/iixakanoi"
+                    android:textAlignment="center" />
+
+                </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

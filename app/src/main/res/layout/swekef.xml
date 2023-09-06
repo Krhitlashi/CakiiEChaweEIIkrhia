@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Swekef"
+    android:id="@+id/sorha"
+    android:background="@color/Shaqa"
+    android:orientation="horizontal"
+    android:paddingTop="16dp">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.125"
+        android:layout_marginStart="@dimen/chelesai">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sweskakef"
+            style="@style/kef"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/Kpaa"
+            android:layout_marginTop="@dimen/chelesai"
+            android:layout_marginBottom="6dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/swekiihiikef"
+                style="@style/kef"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/Kpaa"
+                android:layout_marginBottom="@dimen/chelesai"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.875"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/chelesai"
+        android:layout_marginStart="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="@dimen/chelesai">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Iitxe_Chelesai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:cardBackgroundColor="@color/Piisa"
+            app:strokeColor="@color/Tiisha"
+            app:strokeWidth="0dp"
+            android:elevation="0dp"
+            android:layout_marginEnd="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/kef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/laarinak"
+                        android:gravity="center"
+                        android:layout_marginVertical="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="4dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/Kpaa"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/swelaarinakciihii"
+                        style="@style/Iitxe_Ciihii"
+                        app:cardBackgroundColor="@color/Tiisha"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:strokeColor="@color/Tawa"
+                        app:strokeWidth="0dp"
+                        app:cardElevation="0dp">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="none">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/swelaarinak"
+                            style="@style/kef"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/Kpaa"
+                            android:rotation="-90"/>
+
+                        </HorizontalScrollView>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Iitxe_Chelesai"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                app:cardBackgroundColor="@color/Piisa"
+                app:strokeColor="@color/Tiisha"
+                app:strokeWidth="0dp"
+                android:elevation="0dp"
+                android:layout_marginStart="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/kef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/kefskakefai"
+                        android:gravity="center"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="4dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/Kpaa"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/kefskakefaiciihii"
+                        style="@style/Iitxe_Ciihii"
+                        app:cardBackgroundColor="@color/Tiisha"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:strokeColor="@color/Tawa"
+                        app:strokeWidth="0dp"
+                        app:cardElevation="0dp">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="none">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/kefskakefai"
+                            style="@style/kef"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/Kpaa"
+                            android:rotation="-90"/>
+
+                        </HorizontalScrollView>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/chelesai"
+            android:layout_marginTop="6dp">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Iitxe_Chelesai"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        app:cardBackgroundColor="@color/Piisa"
+        app:strokeColor="@color/Tiisha"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:layout_marginEnd="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/kef"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tsalii"
+                android:gravity="center"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="4dp"
+                android:textAlignment="center"
+                android:textColor="@color/Kpaa"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tsaliiciihii"
+                style="@style/Iitxe_Ciihii"
+                app:cardBackgroundColor="@color/Tiisha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:strokeColor="@color/Tawa"
+                app:strokeWidth="0dp"
+                app:cardElevation="0dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tsalii"
+                    style="@style/kef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/Kpaa"
+                    android:rotation="-90"/>
+
+                </HorizontalScrollView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Iitxe_Chelesai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:cardBackgroundColor="@color/Piisa"
+            app:strokeColor="@color/Tiisha"
+            app:strokeWidth="0dp"
+            android:elevation="0dp"
+            android:layout_marginStart="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/kef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/shaqatti"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="4dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/Kpaa"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/shaqatticiihii"
+                    style="@style/Iitxe_Ciihii"
+                    app:cardBackgroundColor="@color/Tiisha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:strokeColor="@color/Tawa"
+                    app:strokeWidth="0dp"
+                    app:cardElevation="0dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/shaqatti"
+                        style="@style/kef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/Kpaa"
+                        android:rotation="-90"/>
+
+                    </HorizontalScrollView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

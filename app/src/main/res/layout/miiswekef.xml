@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Miiswekef"
+    android:layout_marginBottom="@dimen/chelesai"
+    android:layout_marginHorizontal="@dimen/chelesai"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Iitxe_Chelesai"
+        app:cardBackgroundColor="@color/Piisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="@color/Tiisha"
+        app:strokeWidth="0.5dp"
+        app:cardElevation="0dp"
+        android:alpha="0.96">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/kef"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/kefskakefai"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Iitxe_Ciihii"
+                    app:cardBackgroundColor="@color/Tiisha"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:strokeColor="@color/Tawa"
+                    app:strokeWidth="0.5dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/kefskakefai"
+                        style="@style/kef"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/app_name"
+                        android:layout_gravity="center"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/kef"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/laarinak"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Iitxe_Ciihii"
+                    app:cardBackgroundColor="@color/Tiisha"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:strokeColor="@color/Tawa"
+                    app:strokeWidth="0.5dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/swelaarinak"
+                        style="@style/kef"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/app_name"
+                        android:layout_gravity="center"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/kef"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/shaqatti"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Iitxe_Ciihii"
+                    app:cardBackgroundColor="@color/Tiisha"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:strokeColor="@color/Tawa"
+                    app:strokeWidth="0.5dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/shaqatti"
+                        style="@style/kef"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/app_name"
+                        android:layout_gravity="center"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/kef"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/tsalii"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"/>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Iitxe_Ciihii"
+                app:cardBackgroundColor="@color/Tiisha"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:strokeColor="@color/Tawa"
+                app:strokeWidth="0.5dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/tsalii"
+                    style="@style/kef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/app_name"
+                    android:layout_gravity="center"/>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/chelesai"
+        style="@style/Iitxe_Chelesai"
+        app:cardBackgroundColor="@color/Piisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="@color/Tiisha"
+        app:strokeWidth="0.5dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Iitxe_Ciihii"
+                app:cardBackgroundColor="@color/Tiisha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/Tawa"
+                app:strokeWidth="0.5dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/skakef"
+                    style="@style/kef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/app_name"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/kiihiikef"
+                style="@style/kef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/app_name"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
