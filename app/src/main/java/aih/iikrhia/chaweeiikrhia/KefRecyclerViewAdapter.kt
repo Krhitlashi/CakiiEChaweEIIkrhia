@@ -32,13 +32,7 @@ class KefRecyclerViewAdapter(
 
         override fun onClick(p0: View?) { }
 
-        override fun onLongClick(p0: View?): Boolean {
-            val araq = adapterPosition
-            if (araq != RecyclerView.NO_POSITION) {
-                malookwek.sahaktsiinakef(araq)
-            }
-            return true
-        }
+        override fun onLongClick(p0: View?): Boolean { return true }
 
     }
 
@@ -106,7 +100,7 @@ class KefRecyclerViewAdapter(
 
     interface Saswekef {
         fun tsiinakef(kef: Kef)
-        fun sahaktsiinakef(araq: Int)
+        fun sahaktsiinakef(kef: Kef)
     }
 
 }

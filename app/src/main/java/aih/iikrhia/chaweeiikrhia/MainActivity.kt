@@ -1,21 +1,14 @@
 package aih.iikrhia.chaweeiikrhia
 
 import aih.iikrhia.chaweeiikrhia.databinding.ActivityMainBinding
-import android.Manifest
 import android.app.Application
-import android.app.WallpaperManager
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.graphics.drawable.ColorDrawable
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.core.app.ActivityCompat
 import androidx.core.view.WindowCompat
 import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -201,15 +194,15 @@ class MainActivity : AppCompatActivity(), KefRecyclerViewAdapter.Saswekef {
              .replace(" ", "\n")
     }
 
-    override fun sahaktsiinakef(araq: Int) {
+    override fun sahaktsiinakef(kef: Kef) {
         val intent = Intent(this@MainActivity, Miiswekef::class.java)
 
-        val sefkiihiikef = thalasakef[araq].word
-        val sefskakef = thalasakef[araq].translation
-        val seftsalii = thalasakef[araq].note
-        val seflaarinak = thalasakef[araq].loanword
-        val sefshaqatti = thalasakef[araq].proto
-        val sefkefskakefai = thalasakef[araq].calque
+        val sefkiihiikef = kef.word
+        val sefskakef = kef.translation
+        val seftsalii = kef.note
+        val seflaarinak = kef.loanword
+        val sefshaqatti = kef.proto
+        val sefkefskakefai = kef.calque
 
         intent.putExtra("Kiihiikef", sefkiihiikef)
         intent.putExtra("Skakef", sefskakef)

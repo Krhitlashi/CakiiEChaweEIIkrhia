@@ -45,4 +45,9 @@ package aih.iikrhia.chaweeiikrhia
             }
         }
 
+val araq = adapterPosition
+            if (araq != RecyclerView.NO_POSITION) {
+                malookwek.sahaktsiinakef(araq)
+            }
+
 }*/
