@@ -172,15 +172,15 @@ class MainActivity : AppCompatActivity(), KefRecyclerViewAdapter.Saswekef {
 
     }
 
-    override fun tsiinakef(araq: Int) {
+    override fun tsiinakef(kef: Kef) {
         val intent = Intent(this@MainActivity, Swekef::class.java)
 
-        val sefkiihiikef = sacepai(thalasakef[araq].word)
-        val sefskakef = sacepai(thalasakef[araq].translation)
-        val seftsalii = thalasakef[araq].note?.replace(", ", " ｡ ")//?.let { sacepai(it) }
-        val seflaarinak = thalasakef[araq].loanword?.replace(", ", " ｡ ")//?.let { sacepai(it) }
-        val sefshaqatti = thalasakef[araq].proto?.replace(", ", " ｡ ")
-        val sefkefskakefai = thalasakef[araq].calque?.replace(", ", " ｡ ")
+        val sefkiihiikef = sacepai(kef.word)
+        val sefskakef = sacepai(kef.translation)
+        val seftsalii = kef.note?.replace(", ", " ｡ ")//?.let { sacepai(it) }
+        val seflaarinak = kef.loanword?.replace(", ", " ｡ ")//?.let { sacepai(it) }
+        val sefshaqatti = kef.proto?.replace(", ", " ｡ ")
+        val sefkefskakefai = kef.calque?.replace(", ", " ｡ ")
 
         intent.putExtra("Kiihiikef", sefkiihiikef)
         intent.putExtra("Skakef", sefskakef)

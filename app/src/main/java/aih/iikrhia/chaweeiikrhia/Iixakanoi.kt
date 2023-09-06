@@ -35,4 +35,8 @@ class Iixakanoi(private val hakef: ArrayList<Kef>, private val adapter: KefRecyc
         adapter.kfiiKef(sakasaiiixakanoi)
     }
 
+    fun getFilteredList(): ArrayList<Kef> {
+        return sakasaiiixakanoi
+    }
+
 }

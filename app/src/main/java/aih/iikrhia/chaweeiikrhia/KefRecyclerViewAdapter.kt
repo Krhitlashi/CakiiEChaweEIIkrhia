@@ -30,12 +30,7 @@ class KefRecyclerViewAdapter(
             iixani.setOnClickListener(this)
         }
 
-        override fun onClick(p0: View?) {
-            val araq = adapterPosition
-            if (araq != RecyclerView.NO_POSITION) {
-                malookwek.tsiinakef(araq)
-            }
-        }
+        override fun onClick(p0: View?) { }
 
         override fun onLongClick(p0: View?): Boolean {
             val araq = adapterPosition
@@ -61,6 +56,10 @@ class KefRecyclerViewAdapter(
         mashema.skakef.text = kiitsekef[araq].translation.replace(", ", " ｡ ")
         mashema.laarinak.text = kiitsekef[araq].loanword?.replace(", ", " ｡ ")
         mashema.kefskakefai.text = kiitsekef[araq].calque?.replace(", ", " ｡ ")
+
+        mashema.itemView.setOnClickListener {
+            malookwek.tsiinakef(kiitsekef[araq])
+        }
 
         if (kiitsekef[araq].loanword != null) {
             mashema.laarinak.visibility = View.VISIBLE
@@ -106,7 +105,7 @@ class KefRecyclerViewAdapter(
     }
 
     interface Saswekef {
-        fun tsiinakef(araq: Int)
+        fun tsiinakef(kef: Kef)
         fun sahaktsiinakef(araq: Int)
     }
 
