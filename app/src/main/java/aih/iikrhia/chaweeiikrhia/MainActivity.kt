@@ -190,6 +190,7 @@ class MainActivity : AppCompatActivity(), KefRecyclerViewAdapter.Saswekef {
              .split(" ").reversed().joinToString()
              .replace(",", "!`!")
              .replace("ſɭ!`!", "ſɭ,")
+             .replace("ı]!`!", "ı],")
              .replace("!`!", "")
              .replace(" ", "\n")
     }
