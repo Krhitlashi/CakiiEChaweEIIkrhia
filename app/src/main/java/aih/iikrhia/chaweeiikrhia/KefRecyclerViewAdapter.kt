@@ -47,6 +47,7 @@ class KefRecyclerViewAdapter(
         mashema.itemView.animation = AnimationUtils.loadAnimation(mashema.itemView.context, R.anim.chelesaitahalaqarh)
 
         mashema.kiihiikef.text = kiitsekef[araq].word.replace(", ", " ｡ ")
+            .replace("ɭ̀ʃ", "j͑ʃ").replace("ɻʃ", "ɽ͑ʃ'").replace("ⲝʃ", "j͐ʃ").replace("ſ̙ן", "ᶅſ").replace("ƣ", "ƣ̋").replace("ɻ", "п́").replace("ɔ̒", "ͷ̗")
         mashema.skakef.text = kiitsekef[araq].translation.replace(", ", " ｡ ")
         mashema.laarinak.text = kiitsekef[araq].loanword?.replace(", ", " ｡ ")
         mashema.kefskakefai.text = kiitsekef[araq].calque?.replace(", ", " ｡ ")

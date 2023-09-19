@@ -188,6 +188,13 @@ class MainActivity : AppCompatActivity(), KefRecyclerViewAdapter.Saswekef {
     private fun sacepai(kef: String): String {
          return kef.replace(", ", " ｡ ")
              .split(" ").reversed().joinToString()
+             .replace("ɭ̀ʃ", "j͑ʃ")
+             .replace("ɻʃ", "ɽ͑ʃ'")
+             .replace("ⲝʃ", "j͐ʃ")
+             .replace("ſ̙ן", "ᶅſ")
+             .replace("ƣ", "ƣ̋")
+             .replace("ɻ", "п́")
+             .replace("ɔ̒", "ͷ̗")
              .replace(",", "!`!")
              .replace("ſɭ!`!", "ſɭ,")
              .replace("ı]!`!", "ı],")
