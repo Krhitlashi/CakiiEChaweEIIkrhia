@@ -46,12 +46,11 @@ class KefRecyclerViewAdapter(
     override fun onBindViewHolder(mashema: ShemaXi, araq: Int) {
         mashema.itemView.animation = AnimationUtils.loadAnimation(mashema.itemView.context, R.anim.chelesaitahalaqarh)
 
-        mashema.kiihiikef.text = kiitsekef[araq].word.replace(", ", " ｡ ")
-            .replace("ɭ̀ʃ", "j͑ʃ").replace("ɻʃ", "ɽ͑ʃ'").replace("ⲝʃ", "j͐ʃ").replace("ſ̙ן", "ᶅſ").replace("ƣ", "ƣ̋").replace("ɻ", "п́").replace("ɔ̒", "ͷ̗")
-        mashema.skakef.text = kiitsekef[araq].translation.replace(", ", " ｡ ")
-        mashema.laarinak.text = kiitsekef[araq].loanword?.replace(", ", " ｡ ")
-        mashema.kefskakefai.text = kiitsekef[araq].calque?.replace(", ", " ｡ ")
-
+        mashema.kiihiikef.text = sacepai(kiitsekef[araq].word.replace(", ", " ｡ ")
+            .replace("ɭ̀ʃ", "j͑ʃ").replace("ɻʃ", "ɽ͑ʃ'").replace("ⲝʃ", "j͐ʃ").replace("ſ̙ן", "ᶅſ").replace("ƣ", "ƣ̋").replace("ɻ", "п́").replace("ɔ̒", "ͷ̗"), 4)
+        mashema.skakef.text = sacepai(kiitsekef[araq].translation.replace(", ", " ｡ "),4)
+        mashema.laarinak.text = kiitsekef[araq].loanword?.replace(", ", " ｡ ")?.let { sacepai(it, 4) }
+        mashema.kefskakefai.text = kiitsekef[araq].calque?.replace(", ", " ｡ ")?.let { sacepai(it,4) }
         mashema.itemView.setOnClickListener {
             malookwek.tsiinakef(kiitsekef[araq])
         }
@@ -91,6 +90,21 @@ class KefRecyclerViewAdapter(
         notifyDataSetChanged()
         sasaka.filter(text)
     }
+
+    fun sacepai(kef: String, yaaniik: Int): String {
+        val oshiipewa = kef.replace(", ", " ｡ ")
+            .replace(" \\(.*?\\)".toRegex(), "")
+            .replace(" \\|.*?\\|".toRegex(), "")
+            .replace(",", "!`!").replace("ſɭ!`!", "ſɭ,").replace("ı]!`!", "ı],").replace("!`!", "")
+            .split(" ")
+            .reversed()
+
+        val niik = oshiipewa.chunked(yaaniik)
+            .map { it.joinToString("\n") }
+
+        return niik.joinToString("\n")
+    }
+
     override fun getItemViewType(position: Int): Int {
         return position
     }

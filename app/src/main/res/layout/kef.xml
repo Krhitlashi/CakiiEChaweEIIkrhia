@@ -22,25 +22,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/laarinak"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:textAlignment="center"
                 android:text="@string/app_name"
-                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
                 android:textSize="12sp"
                 android:textColor="@color/Kpaa"
-                android:visibility="gone" />
+                android:visibility="visible" />
             <TextView
                 android:id="@+id/kefskakefai"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:textAlignment="center"
                 android:text="@string/app_name"
-                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:layout_marginEnd="8dp"
                 android:textSize="12sp"
                 android:textColor="@color/Kpaa"
                 android:visibility="gone" />
@@ -48,32 +50,35 @@
             <com.google.android.material.card.MaterialCardView
                 style="@style/Iitxe_Ciihii"
                 app:cardBackgroundColor="@color/Tiisha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 app:strokeColor="@color/Tawa"
+                android:layout_marginEnd="8dp"
                 app:strokeWidth="0dp"
-                app:cardElevation="0dp">
+                app:cardElevation="0dp"
+                android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/skakef"
                     style="@style/kef"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:textAlignment="center"
                     android:textColor="@color/Kpaa"
-                    android:text="@string/app_name"/>
+                    android:text="@string/app_name"
+                    android:gravity="center"/>
 
             </com.google.android.material.card.MaterialCardView>
 
             <TextView
                 android:id="@+id/kiihiikef"
                 style="@style/kef"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:textAlignment="center"
                 android:text="@string/app_name"
                 android:textColor="@color/Kpaa"
-                android:layout_marginTop="4dp" />
+                android:gravity="center" />
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
