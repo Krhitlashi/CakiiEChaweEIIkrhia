@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="Shaqa">#FFFFFF</color>
-    <color name="Piisa">#f0f0f0</color>
-    <color name="Tiisha">#e0e0e0</color>
-    <color name="Tawa">#d0d0d0</color>
-    <color name="Paarha">#c0c0c0</color>
-    <color name="Neratle">#e8e8e8</color>
-    <color name="Ciihii">#f8f8f8</color>
+    <color name="Piisa">#f4f4f4</color>
+    <color name="Tiisha">#e4e4e4</color>
+    <color name="Tawa">#d4d4d4</color>
+    <color name="Paarha">#c4c4c4</color>
+    <color name="Neratle">#ececec</color>
+    <color name="Ciihii">#fcfcfc</color>
 
     <color name="Kpaa">#000000</color>
     <color name="NeTiisha">#424242</color>

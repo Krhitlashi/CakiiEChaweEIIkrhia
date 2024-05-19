@@ -1,5 +1,15 @@
 <resources>
-    <dimen name="chelesai">24dp</dimen>
-    <dimen name="psarh">88dp</dimen>
+    <dimen name="chelesai">16dp</dimen>
+    <dimen name="psarh">80dp</dimen>
     <dimen name="sorha">40dp</dimen>
+
+    <dimen name="paaksiica">24dp</dimen>
+    <dimen name="paaksiicamii">8dp</dimen>
+    <dimen name="ciihii">20dp</dimen>
+    <dimen name="ciihiimii">4dp</dimen>
+
+    <dimen name="catsiina">16dp</dimen>
+    <dimen name="catsiinamii">8dp</dimen>
+    <dimen name="catsiinaciihii">12dp</dimen>
+    <dimen name="catsiinaciihiimii">4dp</dimen>
 </resources>

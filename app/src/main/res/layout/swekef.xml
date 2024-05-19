@@ -74,9 +74,9 @@
             android:layout_weight="0.5"
             app:cardBackgroundColor="@color/Piisa"
             app:strokeColor="@color/Tiisha"
-            app:strokeWidth="0dp"
             android:elevation="0dp"
-            android:layout_marginEnd="6dp">
+            android:layout_marginEnd="6dp"
+            app:contentPadding="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -102,7 +102,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:strokeColor="@color/Tawa"
-                        app:strokeWidth="0dp"
                         app:cardElevation="0dp">
 
                         <HorizontalScrollView
@@ -135,9 +134,9 @@
                 android:layout_weight="0.5"
                 app:cardBackgroundColor="@color/Piisa"
                 app:strokeColor="@color/Tiisha"
-                app:strokeWidth="0dp"
                 android:elevation="0dp"
-                android:layout_marginStart="6dp">
+                android:layout_marginStart="6dp"
+                app:contentPadding="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -162,7 +161,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:strokeColor="@color/Tawa"
-                        app:strokeWidth="0dp"
                         app:cardElevation="0dp">
 
                         <HorizontalScrollView
@@ -205,9 +203,9 @@
         android:layout_weight="0.5"
         app:cardBackgroundColor="@color/Piisa"
         app:strokeColor="@color/Tiisha"
-        app:strokeWidth="0dp"
         android:elevation="0dp"
-        android:layout_marginEnd="6dp">
+        android:layout_marginEnd="6dp"
+        app:contentPadding="4dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -232,7 +230,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:strokeColor="@color/Tawa"
-                app:strokeWidth="0dp"
                 app:cardElevation="0dp">
 
                 <HorizontalScrollView
@@ -265,9 +262,9 @@
             android:layout_weight="0.5"
             app:cardBackgroundColor="@color/Piisa"
             app:strokeColor="@color/Tiisha"
-            app:strokeWidth="0dp"
             android:elevation="0dp"
-            android:layout_marginStart="6dp">
+            android:layout_marginStart="6dp"
+            app:contentPadding="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -292,7 +289,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:strokeColor="@color/Tawa"
-                    app:strokeWidth="0dp"
                     app:cardElevation="0dp">
 
                     <HorizontalScrollView
