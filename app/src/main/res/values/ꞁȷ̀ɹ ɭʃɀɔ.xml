@@ -14,7 +14,7 @@
         <item name="elevation">0dp</item>
         <item name="cardBackgroundColor">@color/Piisa</item>
         <item name="strokeColor">@color/Tiisha</item>
-        <item name="strokeWidth">0.25dp</item>
+        <item name="strokeWidth">0.125dp</item>
     </style>
 
     <style name="Iitxe_Ciihii" parent="@style/Widget.MaterialComponents.CardView">
@@ -30,7 +30,7 @@
         <item name="elevation">0dp</item>
         <item name="cardBackgroundColor">@color/Tiisha</item>
         <item name="strokeColor">@color/Tawa</item>
-        <item name="strokeWidth">0.25dp</item>
+        <item name="strokeWidth">0.125dp</item>
     </style>
 
 
@@ -50,7 +50,7 @@
         <item name="android:padding">8dp</item>
         <item name="cardBackgroundColor">@color/Tiisha</item>
         <item name="strokeColor">@color/Tawa</item>
-        <item name="strokeWidth">0.25dp</item>
+        <item name="strokeWidth">0.125dp</item>
     </style>
 
     <style name="Iitxe_Cazelesh_Ciihii" parent="@style/Widget.MaterialComponents.CardView">
@@ -69,7 +69,7 @@
         <item name="android:padding">8dp</item>
         <item name="cardBackgroundColor">@color/Tawa</item>
         <item name="strokeColor">@color/Paarha</item>
-        <item name="strokeWidth">0.25dp</item>
+        <item name="strokeWidth">0.125dp</item>
     </style>
 
 

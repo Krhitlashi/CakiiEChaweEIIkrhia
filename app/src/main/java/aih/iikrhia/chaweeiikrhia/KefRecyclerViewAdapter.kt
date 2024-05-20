@@ -46,7 +46,7 @@ class KefRecyclerViewAdapter(
     override fun onBindViewHolder(mashema: ShemaXi, araq: Int) {
         mashema.itemView.animation = AnimationUtils.loadAnimation(mashema.itemView.context, R.anim.chelesaitahalaqarh)
 
-        mashema.kiihiikef.text = sacepai(kiitsekef[araq].word.replace(", ", " ｡ ")
+        mashema.kiihiikef.text = zahiikpaa(kiitsekef[araq].word.replace(", ", " ｡ ")
             .replace("ɭ̀ʃ", "j͑ʃ").replace("ɻʃ", "ɽ͑ʃ'").replace("ⲝʃ", "j͐ʃ").replace("ſ̙ן", "ᶅſ").replace("ƣ", "ƣ̋").replace("ɻ", "п́").replace("ɔ̒", "ͷ̗"), 4)
         mashema.skakef.text = sacepai(kiitsekef[araq].translation.replace(", ", " ｡ "),4)
         mashema.laarinak.text = kiitsekef[araq].loanword?.replace(", ", " ｡ ")?.let { sacepai(it, 4) }
@@ -92,6 +92,18 @@ class KefRecyclerViewAdapter(
     }
 
     fun sacepai(kef: String, yaaniik: Int): String {
+        val oshiipewa = kef.replace(", ", " ｡ ")
+            .replace(",", "!`!").replace("ſɭ!`!", "ſɭ,").replace("ı]!`!", "ı],").replace("!`!", "")
+            .split(" ")
+            .reversed()
+
+        val niik = oshiipewa.chunked(yaaniik)
+            .map { it.joinToString("\n") }
+
+        return niik.joinToString("\n")
+    }
+
+    fun zahiikpaa(kef: String, yaaniik: Int): String {
         val oshiipewa = kef.replace(", ", " ｡ ")
             .replace(" \\(.*?\\)".toRegex(), "")
             .replace(" \\|.*?\\|".toRegex(), "")
