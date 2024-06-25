@@ -1,6 +1,6 @@
 package aih.iikrhia.chaweeiikrhia
 
-import aih.iikrhia.chaweeiikrhia.KefRecyclerViewAdapter.ShemaXi
+import aih.iikrhia.chaweeiikrhia.FefrhiKef.ShemaXi
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 
-class KefRecyclerViewAdapter(
+class FefrhiKef(
     private var context: Context,
     private var kiitsekef: ArrayList<Kef>,
     private val malookwek: Saswekef

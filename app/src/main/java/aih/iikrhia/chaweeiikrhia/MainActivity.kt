@@ -1,6 +1,5 @@
 package aih.iikrhia.chaweeiikrhia
 
-import aih.iikrhia.chaweeiikrhia.databinding.ActivityMainBinding
 import android.app.Application
 import android.content.Intent
 import android.os.Bundle
@@ -25,28 +24,30 @@ class ChaweEIikrhia: Application() {
         super.onCreate()
         DynamicColors.applyToActivitiesIfAvailable(this)
     }
+    lateinit var kiihiikef: String
+    lateinit var skakef: String
+    var tsalii: String? = null
+    var laarinak: String? = null
+    var shaqatti: String? = null
+    var kefskakefai: String? = null
 }
 
-class MainActivity : AppCompatActivity(), KefRecyclerViewAdapter.Saswekef {
+class MainActivity : AppCompatActivity(), FefrhiKef.Saswekef {
 
-    private lateinit var binding: ActivityMainBinding
-
-    val thalasakef = ArrayList<Kef>()
-    val adapter = KefRecyclerViewAdapter(this, thalasakef, this)
-    val linearLayoutManager = LinearLayoutManager(this)
+    private val thalasakef = ArrayList<Kef>()
+    private val adapter = FefrhiKef(this, thalasakef, this)
+    private val linearLayoutManager = LinearLayoutManager(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.arakef)
 
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
         val recyclerView: RecyclerView = findViewById(R.id.sakef)
 
-
         linearLayoutManager.reverseLayout = true
+        linearLayoutManager.stackFromEnd = true
         recyclerView.layoutManager = linearLayoutManager
 
         recyclerView.adapter = adapter
@@ -167,20 +168,14 @@ class MainActivity : AppCompatActivity(), KefRecyclerViewAdapter.Saswekef {
 
     override fun tsiinakef(kef: Kef) {
         val intent = Intent(this@MainActivity, Swekef::class.java)
+        val zopii = applicationContext as ChaweEIikrhia
 
-        val sefkiihiikef = sacepai(kef.word)
-        val sefskakef = sacepai(kef.translation)
-        val seftsalii = kef.note?.replace(", ", " ｡ ")//?.let { sacepai(it) }
-        val seflaarinak = kef.loanword?.replace(", ", " ｡ ")//?.let { sacepai(it) }
-        val sefshaqatti = kef.proto?.replace(", ", " ｡ ")
-        val sefkefskakefai = kef.calque?.replace(", ", " ｡ ")
-
-        intent.putExtra("Kiihiikef", sefkiihiikef)
-        intent.putExtra("Skakef", sefskakef)
-        intent.putExtra("Tsalii", seftsalii)
-        intent.putExtra("Laarinak", seflaarinak)
-        intent.putExtra("Shaqatti", sefshaqatti)
-        intent.putExtra("Kefskakefai", sefkefskakefai)
+        zopii.kiihiikef = sacepai(kef.word)
+        zopii.skakef = sacepai(kef.translation)
+        zopii.tsalii = kef.note?.replace(", ", " ｡ ")//?.let { sacepai(it) }
+        zopii.laarinak = kef.loanword?.replace(", ", " ｡ ")//?.let { sacepai(it) }
+        zopii.shaqatti = kef.proto?.replace(", ", " ｡ ")
+        zopii.kefskakefai = kef.calque?.replace(", ", " ｡ ")
 
         startActivity(intent)
     }

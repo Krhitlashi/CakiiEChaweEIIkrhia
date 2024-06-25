@@ -24,7 +24,7 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/sweskakef"
-            style="@style/kef"
+            style="@style/Kef"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.5"
@@ -37,7 +37,7 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/swekiihiikef"
-                style="@style/kef"
+                style="@style/Kef"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.5"
@@ -84,7 +84,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textview.MaterialTextView
-                        style="@style/kef"
+                        style="@style/Kef"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="@string/laarinak"
@@ -111,7 +111,7 @@
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/swelaarinak"
-                            style="@style/kef"
+                            style="@style/Kef"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/app_name"
@@ -144,7 +144,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textview.MaterialTextView
-                        style="@style/kef"
+                        style="@style/Kef"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="@string/kefskakefai"
@@ -170,7 +170,7 @@
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/kefskakefai"
-                            style="@style/kef"
+                            style="@style/Kef"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/app_name"
@@ -213,7 +213,7 @@
             android:orientation="horizontal">
 
             <com.google.android.material.textview.MaterialTextView
-                style="@style/kef"
+                style="@style/Kef"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/tsalii"
@@ -239,7 +239,7 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tsalii"
-                    style="@style/kef"
+                    style="@style/Kef"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/app_name"
@@ -272,7 +272,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.textview.MaterialTextView
-                    style="@style/kef"
+                    style="@style/Kef"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/shaqatti"
@@ -298,7 +298,7 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/shaqatti"
-                        style="@style/kef"
+                        style="@style/Kef"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/app_name"

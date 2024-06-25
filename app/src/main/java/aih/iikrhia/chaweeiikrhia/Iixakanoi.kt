@@ -3,7 +3,7 @@ package aih.iikrhia.chaweeiikrhia
 import android.widget.Filter
 import java.util.Locale
 
-class Iixakanoi(private val hakef: ArrayList<Kef>, private val adapter: KefRecyclerViewAdapter) :
+class Iixakanoi(private val hakef: ArrayList<Kef>, private val adapter: FefrhiKef) :
     Filter() {
     private var sakasaiiixakanoi: ArrayList<Kef> = ArrayList()
 

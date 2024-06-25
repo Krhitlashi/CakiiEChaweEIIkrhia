@@ -20,12 +20,7 @@ class Swekef: AppCompatActivity() {
         window.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
         window.setDimAmount(0.88F)
 
-        val kef = intent.getStringExtra("Kiihiikef")
-        val kef2 = intent.getStringExtra("Skakef")
-        val kef3 = intent.getStringExtra("Tsalii")
-        val kef4 = intent.getStringExtra("Laarinak")
-        val kef5 = intent.getStringExtra("Shaqatti")
-        val kef6 = intent.getStringExtra("Kefskakefai")
+        val zopii = applicationContext as ChaweEIikrhia
 
         val kiihiikef = findViewById<TextView>(R.id.swekiihiikef)
         val skakef = findViewById<TextView>(R.id.sweskakef)
@@ -39,11 +34,11 @@ class Swekef: AppCompatActivity() {
         shaqatti.setTypeface(null, Typeface.ITALIC)
         kefskakefai.setTypeface(null, Typeface.ITALIC)
 
-        kiihiikef.text = kef
-        skakef.text = kef2
-        tsalii.text = kef3
-        laarinak.text = kef4
-        shaqatti.text = kef5
-        kefskakefai.text = kef6
+        kiihiikef.text = zopii.kiihiikef
+        skakef.text = zopii.skakef
+        tsalii.text = zopii.tsalii
+        laarinak.text = zopii.laarinak
+        shaqatti.text = zopii.shaqatti
+        kefskakefai.text = zopii.kefskakefai
     }
 }

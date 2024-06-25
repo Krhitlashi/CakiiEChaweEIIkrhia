@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Iitxe_Chelesai" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/IiChele</item>
+    </style>
+    <style name="IiChele">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/PaaksiicaMii</item>
+        <item name="cornerSizeTopLeft">@dimen/Paaksiica</item>
+        <item name="cornerSizeBottomRight">@dimen/Paaksiica</item>
+        <item name="cornerSizeBottomLeft">@dimen/PaaksiicaMii</item>
+        <item name="elevation">0dp</item>
+        <item name="cardBackgroundColor">@color/Piisa</item>
+        <item name="strokeColor">@color/Tiisha</item>
+        <item name="strokeWidth">0.5dp</item>
+    </style>
+    <style name="Iitxe_Ciihii" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/IiCiihii</item>
+    </style>
+    <style name="IiCiihii">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/CiihiiMii</item>
+        <item name="cornerSizeTopLeft">@dimen/Ciihii</item>
+        <item name="cornerSizeBottomRight">@dimen/Ciihii</item>
+        <item name="cornerSizeBottomLeft">@dimen/CiihiiMii</item>
+        <item name="elevation">0dp</item>
+        <item name="cardBackgroundColor">@color/Tiisha</item>
+        <item name="strokeColor">@color/Tawa</item>
+        <item name="strokeWidth">0.5dp</item>
+    </style>
+
+    <style name="Iitxe_Psarh" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/IiPsarh</item>
+    </style>
+    <style name="IiPsarh">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/PaaksiicaMii</item>
+        <item name="cornerSizeTopLeft">@dimen/Paaksiica</item>
+        <item name="cornerSizeBottomRight">@dimen/Paaksiica</item>
+        <item name="cornerSizeBottomLeft">@dimen/PaaksiicaMii</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Iitxe_Catsiina" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/Ctsiina</item>
+    </style>
+    <style name="Ctsiina">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/CatsiinaMii</item>
+        <item name="cornerSizeTopLeft">@dimen/Catsiina</item>
+        <item name="cornerSizeBottomRight">@dimen/Catsiina</item>
+        <item name="cornerSizeBottomLeft">@dimen/CatsiinaMii</item>
+        <item name="android:shadowColor">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="cardBackgroundColor">@color/Tiisha</item>
+        <item name="strokeColor">@color/Tawa</item>
+        <item name="strokeWidth">0.5dp</item>
+    </style>
+    <style name="Iitxe_Catsiina_Ciihii" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/CtsiinaCiihii</item>
+    </style>
+    <style name="CtsiinaCiihii">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/CatsiinaCiihiiMii</item>
+        <item name="cornerSizeTopLeft">@dimen/CatsiinaCiihii</item>
+        <item name="cornerSizeBottomRight">@dimen/CatsiinaCiihii</item>
+        <item name="cornerSizeBottomLeft">@dimen/CatsiinaCiihiiMii</item>
+        <item name="android:shadowColor">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="cardBackgroundColor">@color/Tawa</item>
+        <item name="strokeColor">@color/Paarha</item>
+        <item name="strokeWidth">0.5dp</item>
+    </style>
+
+
+    <style name="SakKantoni">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/sak_kantoni</item>
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
+    <style name="SakKsaka">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/sak_ksaka</item>
+    </style>
+
+
+    <style name="Tahaq">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/PaaksiicaMii</item>
+        <item name="cornerSizeTopLeft">@dimen/Paaksiica</item>
+        <item name="cornerSizeBottomRight">@dimen/Paaksiica</item>
+        <item name="cornerSizeBottomLeft">@dimen/PaaksiicaMii</item>
+    </style>
+    <style name="TahaqMii">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/Catsiina</item>
+        <item name="cornerSizeTopLeft">@dimen/CatsiinaMii</item>
+        <item name="cornerSizeBottomRight">@dimen/CatsiinaMii</item>
+        <item name="cornerSizeBottomLeft">@dimen/Catsiina</item>
+    </style>
+
+
+    <style name="Kef">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

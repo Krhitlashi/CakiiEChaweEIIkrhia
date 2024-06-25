@@ -21,7 +21,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/iixakanoipaaksiica"
-            style="@style/Iitxe_Cazelesh"
+            style="@style/Iitxe_Catsiina"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_gravity="bottom"
@@ -46,7 +46,7 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/sakaiixa"
-            style="@style/Iitxe_Cazelesh_Ciihii"
+            style="@style/Iitxe_Catsiina_Ciihii"
             android:layout_width="44dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical|end"
@@ -68,7 +68,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/kiihiisaka"
-            style="@style/Iitxe_Cazelesh"
+            style="@style/Iitxe_Catsiina"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_gravity="bottom"
@@ -86,7 +86,7 @@
                     android:layout_height="match_parent">
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Iitxe_Cazelesh_Ciihii"
+                    style="@style/Iitxe_Catsiina_Ciihii"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
@@ -99,7 +99,7 @@
                     android:textAlignment="center" />
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Iitxe_Cazelesh_Ciihii"
+                    style="@style/Iitxe_Catsiina_Ciihii"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"

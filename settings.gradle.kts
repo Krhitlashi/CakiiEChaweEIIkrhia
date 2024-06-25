@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ſ͔ɭᴜ ᶅſɔ ꞁȷ̀ɔ ꞁȷ̀ɹ ſɭˬꞇᴜ"
 include(":app")
- 
+include(":Iikrhia")
